@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senha</title>
+
+    <!-- Link de favicon -->
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+
+    <!-- Link para CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="carregar()">
+    <!-- Header -->
+    <header>
+        <h1>Gerador de senha</h1>
+    </header>
+
+    <!-- Section -->
+    <section>
+        <!-- Imagem -->
+        <div>
+            <img src="imagens/key.png" alt="imagem chave" width="100px" height="100px" onmouseout="foraImg()" onmouseenter="dentro()">
+            <p id="autoral">key for <img src="imagens/baianat-autor.jpg" alt="autor" width="15px" height="15px" style="border-radius: 50px;"> Baianat</p>
+        </div>
+
+        <!-- Botão e saida -->
+        <div id="saida">
+            <input type="button" value="Gerar Senha" onclick="gerarSenha()">
+            <div id="senha">
+                
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>&copy; Lipe</footer>
+
+    <script src="code.js"></script>
+</body>
+</html>
